@@ -64,7 +64,7 @@ sub8_FUN_08022710,0x080213ec,0xc329da8589532aa9,0x72df3b644252a0d9,,,,,nu,Only u
 sub9_FUN_08022710,0x0802148c,0x709c186c9ad46b47,0x1b57a78d5efd3846,,,,,nu,Only used by FUN_08022710. Called twice.,
 UNKNOWN,0x080214e0,0x8cbb854f6b8c485b,0x27d627db52ac9b37,,,,,,Only called by DMA1_Stream3_IRQHandler_f_ & FUN_08022710. Called multiple times by both.,
 sub10_FUN_08022710,0x0802166c,0xadfa091cf73d63f1,0xa2a07c1ca4f9d35d,,,,,nu,Only used by FUN_08022710: Stores/processes data in SRAM (input is either SRAM9294 or SRAM942C or SRAM9aa8),
-sub11_FUN_08022710,0x080216f8,0xf69cd99bfd82562f,0xe2d7c0145d13699b,,,,,nu,Only used by FUN_08022710,
+setup_biquad_filter,0x080216f8,0xf69cd99bfd82562f,0xe2d7c0145d13699b,,,,,nu,Used for setup biquad audio filters in FUN_08022710. Third call in FUN_08022710 - configuring filters for TX audio. 2nd param - low freq, 3rd - freq high, 4th - arm_biquad_casd_df1_inst_f32 *,
 sub12_FUN_08022710,0x080219f4,0x81c8433d7899f266,0x64bea18a262f9499,,,,,nu,Only used by FUN_08022710,
 sub13_FUN_08022710,0x08021a58,0xd8fec12bc124d911,0x6edc25425da8f989,,,,,nu,Only used by FUN_08022710,
 sub_DMA1_Stream3_IRQHandler,0x08021ac8,0x52ddd3b4f1ebe1a3,0x23f180d75189cb7f,,,,,nu,Only used by DMA1_Stream3_IRQHandler_f_,
